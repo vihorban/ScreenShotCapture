@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+
 using System.IO;
 using Com.CurtisRutland.WpfHotkeys;
 using Delay;
@@ -84,7 +85,7 @@ namespace ScreenShotCapture
             }
             catch (Exception e)
             {
-                System.Windows.MessageBox.Show("The process failed: "+ e.ToString());
+                System.Windows.MessageBox.Show("The process failed: " + e.ToString());
             }
             finally { }
         }
