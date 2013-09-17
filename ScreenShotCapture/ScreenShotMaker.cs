@@ -18,11 +18,11 @@ namespace ScreenShotCapture
             iy = Convert.ToInt32(y);
             iw = Convert.ToInt32(width);
             ih = Convert.ToInt32(height);
-            if (iw <= 0) iw = 1;
+            if (iw <= 0) iw = 1;    
             if (ih <= 0) ih = 1;
             Bitmap image = new Bitmap(iw, ih, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
-            Graphics g = Graphics.FromImage(image);
-            g.CopyFromScreen(ix, iy, 0, 0, new System.Drawing.Size(iw, ih), CopyPixelOperation.SourceCopy);
+            Graphics graphics = Graphics.FromImage(image);
+            graphics.CopyFromScreen(ix, iy, 0, 0, new System.Drawing.Size(iw, ih), CopyPixelOperation.SourceCopy);
             return image;
         }
 

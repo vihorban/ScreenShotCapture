@@ -23,11 +23,11 @@ namespace ScreenShotCapture
     /// </summary>
     public partial class CustomWindow : Window
     {
-        public double x;
-        public double y;
-        public double width;
-        public double height;
-        public bool isMouseDown = false;
+        private double x;
+        private double y;
+        private double width;
+        private double height;
+        private bool isMouseDown = false;
         public Bitmap bitmap;
 
 
