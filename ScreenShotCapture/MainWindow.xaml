@@ -1,0 +1,21 @@
+﻿<Window x:Class="ScreenShotCapture.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ScreenShot Capture" Height="145" Width="535"
+        Loaded="WindowLoaded" Icon="favicon.ico">
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Label>Folder to save screenshots:</Label>
+                <TextBox Width="300" Text="{Binding Path=Folder}"></TextBox>
+                <Button Content="Change" Click="selectFolder"></Button>
+            </StackPanel>
+            <StackPanel Margin="5">
+                <Label HorizontalAlignment="Center">Press "Print Screen" to make screenshot</Label>
+            </StackPanel>
+            <StackPanel Margin="5">
+                <Button Content="Make custom screenshot" Click="createCustomScreenShot"></Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
